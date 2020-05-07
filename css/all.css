@@ -280,7 +280,7 @@ nav li:last-child {
 }
 
 .header {
-  background-image: url(../img-w3/banner.png);
+  background-image: url(img-w3/banner.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -351,7 +351,7 @@ section {
 
 .classic-block-middle .col-8:hover::after {
   content: "";
-  background-image: url(../img-w3/product-2-color.png);
+  background-image: url(img-w3/product-2-color.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -363,7 +363,7 @@ section {
 }
 
 .classic-block-upper-icon {
-  background-image: url(../img-w3/icon-diamond.svg);
+  background-image: url(img-w3/icon-diamond.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -372,7 +372,7 @@ section {
 }
 
 .classic-block-middle-icon {
-  background-image: url(../img-w3/icon-sun.svg);
+  background-image: url(img-w3/icon-sun.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -381,7 +381,7 @@ section {
 }
 
 .classic-block-bottom-icon {
-  background-image: url(../img-w3/icon-thunder.svg);
+  background-image: url(img-w3/icon-thunder.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -400,7 +400,7 @@ section {
 }
 
 .design {
-  background-image: url(../img-w3/bg.png);
+  background-image: url(img-w3/bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -457,8 +457,8 @@ section {
 }
 
 .left-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img-w3/product-8.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img-w3/product-8.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img-w3/product-8.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img-w3/product-8.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -473,8 +473,8 @@ section {
 }
 
 .right-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img-w3/product-9.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img-w3/product-9.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img-w3/product-9.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img-w3/product-9.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -500,7 +500,7 @@ section {
 }
 
 .recommand ul li:nth-child(1) .img {
-  background-image: url(../img-w3/rec-1.png);
+  background-image: url(img-w3/rec-1.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -508,14 +508,14 @@ section {
 }
 
 .recommand ul li:nth-child(2) .img {
-  background-image: url(../img-w3/rec-2.png);
+  background-image: url(img-w3/rec-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 256px;
 }
 
 .recommand ul li:nth-child(3) .img {
-  background-image: url(../img-w3/rec-3.png);
+  background-image: url(img-w3/rec-3.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -523,7 +523,7 @@ section {
 }
 
 .recommand ul li:nth-child(4) .img {
-  background-image: url(../img-w3/rec-4.png);
+  background-image: url(img-w3/rec-4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -843,36 +843,36 @@ footer {
     display: none;
   }
   .classic .container .classic-block-upper {
-    background-image: url(../img-w3/product-1.png);
+    background-image: url(img-w3/product-1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 134px;
   }
   .classic .container .classic-block-upper-icon {
-    background-image: url(../img-w3/icon-diamond-white.svg);
+    background-image: url(img-w3/icon-diamond-white.svg);
     height: 2rem;
     width: 2rem;
   }
   .classic .container .classic-block-middle-icon {
-    background-image: url(../img-w3/icon-sun-white.svg);
+    background-image: url(img-w3/icon-sun-white.svg);
     height: 2rem;
     width: 2rem;
   }
   .classic .container .classic-block-bottom-icon {
-    background-image: url(../img-w3/icon-thunder-white.svg);
+    background-image: url(img-w3/icon-thunder-white.svg);
     height: 2rem;
     width: 2rem;
   }
   .classic .container .classic-block-middle {
-    background-image: url(../img-w3/product-2.png);
+    background-image: url(img-w3/product-2.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 134px;
   }
   .classic .container .classic-block-bottom {
-    background-image: url(../img-w3/product-3.png);
+    background-image: url(img-w3/product-3.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
