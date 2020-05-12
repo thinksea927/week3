@@ -6,17 +6,38 @@ html(lang="en")
 		link(rel="stylesheet", href="css/reset.css")
 		link(rel="stylesheet", href="css/all.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap")
+		script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
 		title week3
 	body
-		nav.d-flex.flex-content-between.flex-align-center
-			.logo
-				a(href="#")
-					img(src="img-w3/logo.png", alt="")
-			ul.d-flex.flex-align-center.fc-light
-				li 系列鏡框
-				li 門市據點
-				li 部落格
-				li 常見問題
+		nav
+			.container
+				.d-flex.flex-content-between.flex-align-center
+					.logo
+						a(href="index.html")
+							img(src="img-w3/logo.png", alt="")
+					ul.d-flex.flex-align-center.fc-light
+						li 
+							a(href="#") 系列鏡框
+						li 
+							a(href="#") 門市據點
+						li 
+							a(href="#") 部落格
+						li 
+							a(href="faq.html") 常見問題
+					.hamburger-icon
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+			ul.full-width-menu
+				li
+					a(href="#") 系列鏡框
+				li
+					a(href="#") 門市據點
+				li
+					a(href="#") 部落格
+				li
+					a(href="faq.html") 常見問題
 		block content
 		include footer
-								
+		include script
+							

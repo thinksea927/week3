@@ -1,0 +1,68 @@
+.faq-img
+    background: url(../img-w4/blog-4.png) center 20% no-repeat
+    background-size: cover
+    height: 304px
+    h1
+        margin-right: 10px
+
+.question
+    padding-top: 88px
+    padding-bottom: 156px
+    li
+        padding: 22px 38.99px 22px 38px
+        border-bottom: 1px solid #000
+        &:last-child
+            border-bottom: none
+            
+    ul   
+        border: 1px solid #000000
+.answer
+    display: none
+    font-size: 1rem
+    font-weight: normal
+    background-color: #F2F2F2
+
+.answer-icon
+    background-image: url(../img-w4/arrow-down.svg) 
+    width: 40px
+    height: 24px
+    cursor: pointer
+.answer-icon-show
+    background-image: url(../img-w4/arrow-up.svg)
+    width: 40px
+    height: 24px
+.show
+    display: block
+
+@media screen and ( max-width: 992px )
+    .faq-img
+        background-position: 32% 33%
+        background-size: 1320px
+        img
+            width: 48px
+            height: 48px
+    .mb-2
+        margin-bottom: 2rem
+    .fz-4
+        font-size: 1rem
+    .answer
+        font-size: 0.875rem
+    .question
+        padding-top: 40px
+        padding-bottom: 104px
+@media screen and ( max-width: 767px )
+    .faq-img
+        height: 143px
+        background-position: 36% 36%
+        background-size: 186%
+        img
+            width: 24px
+            height: 24px
+
+    .question
+        padding-top: 24px
+        padding-bottom: 56px
+        li
+            padding: 16px 8px 16px 16px
+    .mb-2
+        margin-bottom: 1rem

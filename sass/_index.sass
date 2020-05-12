@@ -1,0 +1,625 @@
+/** header **/
+
+nav
+	background-color: $color-primary
+	padding-top: 30px
+	padding-bottom: 30px
+	.container
+		max-width: 1744px
+	li
+		font-size: 1.25rem
+		padding-right: 4rem
+		&:last-child
+			padding-right: 0
+		a
+			color: $color-white
+			&:hover
+				border-bottom: 2px solid $color-white
+
+.icon-bar
+	display: block
+	height: 0.25rem
+	width: 2rem
+	background-color: $color-white
+	margin-bottom: 4px
+	&:last-child
+		margin-bottom: 0px
+.hamburger-icon
+	display: none
+	cursor: pointer
+.full-width-menu
+	position: absolute
+	top: 100%
+	left: 0
+	width: 100%
+	max-height: 0px
+	transition: all 0.5s
+	overflow: hidden
+	z-index: 120
+.full-width-menu.active
+	max-height: 420px
+
+.full-width-menu
+	li
+		display: block
+		background-color: $color-primary
+		text-align: center
+		padding-right: 0
+		padding-top: 1rem
+		padding-bottom: 1rem
+		border-top: 1px solid $color-white
+		&:last-child
+			border-bottom: 1px solid $color-white
+		&:hover
+			background-color: $color-primary-dark
+	a
+		display: block
+		&:hover
+			border-bottom: none
+	
+	
+.header
+	background-image: url(../img-w3/banner.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	height: 840px
+
+.container
+	max-width: 1224px
+	margin: 0 auto
+	padding-left: 12px
+	padding-right: 12px
+
+.header-block
+	text-align: right
+	span
+		font-size: 2.25rem
+		font-weight: bold
+
+section
+	padding-top: 4rem
+	padding-bottom: 5rem
+h2
+	margin-bottom: 3.75rem
+	text-align: center
+	color: $color-primary-dark
+.points
+	background-color: $color-secondary
+	li
+		width: 23.5%
+		padding: 0px 37px
+.icon
+	width: 100px
+	height: 100px
+	margin: 0 auto
+	margin-bottom: 2.5rem
+.row
+	display: flex
+.col-8
+	width: 66%
+.col-4
+	width: 33.33%
+	img
+		width: 3rem
+.classic-block-middle
+	.col-8
+		position: relative
+		&:hover
+			img
+				opacity: 0
+			&::after
+				content: ""
+				background-image: url(../img-w3/product-2-color.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+				position: absolute
+				top: 0
+				right: 0
+				// display: block
+				height: 100%
+				width: 100%
+
+
+.classic-block-upper-icon
+	background-image: url(../img-w3/icon-diamond.svg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+	width: 3rem
+	height: 3rem
+.classic-block-middle-icon
+	background-image: url(../img-w3/icon-sun.svg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+	width: 3rem
+	height: 3rem
+.classic-block-bottom-icon
+	background-image: url(../img-w3/icon-thunder.svg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: contain
+	width: 3rem
+	height: 3rem
+.font-style
+	font-family: roboto
+	font-style: italic
+	font-size: 3rem
+	font-weight: bolder
+	text-transform: uppercase
+	color: $color-primary
+	margin-left: 0.5rem
+
+.design
+	background-image: url(../img-w3/bg.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding-bottom: 479px
+.design-upper
+	justify-content: center
+	margin-left: 2rem
+	margin-right: 2rem
+
+.more
+	width: 31.66%
+	margin-right: 83px
+.more-button
+	width: 121.62%
+	max-width: 315px
+	height: 62.87%
+	max-height: 105px
+	padding: 0
+	border: none
+	left: 27px
+	top: 50%
+	transform: translateY(-50%)
+	background-color: #ffffff
+	font-size: 4.5rem
+	color: $color-primary
+	font-family: roboto
+	font-weight: bold
+	span
+		padding-left: 2rem
+	img
+		margin-left: 1rem
+		transition: padding-left 1s ease
+		&:hover
+			margin-left: 1.5rem
+.design-bottom
+	height: 592px
+.left-img
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img-w3/product-8.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	flex-grow: 1
+	flex-shrink: 1
+	margin-right: 30px
+	font-family: roboto
+	line-height: 592px
+
+.right-img
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img-w3/product-9.png)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	flex-grow: 1
+	flex-shrink: 1
+	font-family: roboto
+	line-height: 592px
+
+.recommand
+	margin-top: -399px
+	li
+		// width: 282px
+	p
+		font-family: roboto
+		
+		&:last-child
+			color: $color-time
+	
+	ul
+		li
+			&:nth-child(1)
+				.img
+					background-image: url(../img-w3/rec-1.png)
+					background-repeat: no-repeat
+					background-position-x: center 
+					// background-position-y: top
+					background-size: cover
+					height: 256px
+			&:nth-child(2)
+				.img
+					background-image: url(../img-w3/rec-2.png)
+					background-repeat: no-repeat
+					// background-position: center 
+					background-size: cover
+					height: 256px
+			&:nth-child(3)
+				.img
+					background-image: url(../img-w3/rec-3.png)
+					background-repeat: no-repeat
+					background-position: center center
+					background-size: cover
+					height: 256px
+			&:nth-child(4)
+				.img
+					background-image: url(../img-w3/rec-4.png)
+					background-repeat: no-repeat
+					background-position: center
+					background-size: cover
+					height: 256px
+.recommand-content
+	padding: 1rem
+	border: 1px solid $color-border
+
+.contact
+	background-color: $color-secondary
+	.container
+		padding-left: 216px
+		padding-right: 216px
+	h2
+		margin-bottom: 1.5rem
+		color: #000000
+	p
+		font-size: 1.25rem
+		margin-bottom: 1.25rem
+	button
+		background-color: $color-primary
+		border: none
+		color: $color-white
+		padding: 1rem 58px
+		margin: 0 auto
+		display: block
+		font-size: 1rem
+		cursor: pointer
+		&:hover
+			background-color: $color-primary-dark
+	.row
+		label
+			margin-bottom: 4px
+		label, input[type="text"], textarea
+			width: 100%
+		input, textarea
+			border: 1px solid #000000
+		input, textarea
+			padding: 0.875rem 1rem
+		input::placeholder, textarea::placeholder
+			color: #000000
+			opacity: 0.2
+		input[type="checkbox"]
+			border: 1px solid #000000
+		p
+			font-size: 1rem
+			margin-bottom: 0
+.input-group
+	margin-bottom: 42px
+	input, textarea
+		background-color: transparent
+
+
+.footer-block
+	padding-top: 3rem
+	padding-bottom: 2.5rem
+	padding-left: 25px
+	padding-right: 25px
+	p
+		font-family: roboto
+		font-size: 2.25rem
+	ul
+		&::after
+			content: ""
+			border: none
+			height: 1px
+			display: block
+			background-color: $color-white
+			margin-top: 1.2rem
+.footer-nav
+	margin-bottom: 2rem			
+.footer-block > ul
+	img
+		padding-right: 23px
+	&:nth-child(2)
+		img
+			padding-right: 0.75rem
+a
+	text-decoration: none
+
+.copyright
+	ul
+		&:nth-child(1)
+			li
+				&:first-child
+					margin-right: 38px
+			
+		&:nth-child(2)
+			li
+				&:first-child
+					margin-right: 62px
+
+
+footer
+	background-color: $color-primary
+
+/** RWD **/
+// @media screen and (min-width: 576px) and (max-width: 767px)
+@media screen and (max-width: 992px) 
+	h1
+		font-size: 3rem
+	h2
+		font-size: 2rem
+		margin-bottom: 2rem
+	h3
+		font-size: 1.75rem
+
+	.header-block
+		span
+			font-size: 1.25rem
+	.container
+		max-width: calc( 63px*8 + 24px*7 + 12px*2 )
+	.points
+		h2
+			margin-bottom: 12px
+		ul
+			flex-wrap: wrap
+		li
+			// outline: 1px solid red
+			width: 48.21428571428571%
+			padding-left: 50px
+			padding-right: 50px
+			padding-top: 1.25rem
+			padding-bottom: 0.5rem
+			margin-bottom: 1.25rem
+		.icon
+			margin-bottom: 1rem
+			width: 5rem
+			height: 5rem
+	.title
+		font-size: 2rem
+	section
+		padding-top: 2.5rem
+	section.points
+		padding-bottom: 3rem
+		.title
+			margin-bottom: 0.75rem
+	section.classic
+		padding-bottom: 2rem
+		.title
+			margin-bottom: 2rem
+		.font-style
+			font-size: 28px
+		.container
+			.row.mb-4.flex-row-reverse
+				flex-direction: row
+				.col-8
+					margin-right: 1.2rem
+				.col-4
+					justify-content: center
+			.row		
+				.col-4
+					img
+						width: 2rem
+			.row
+				margin-bottom: 0.5rem
+	section.design
+		padding-bottom: 417px
+		.design-bottom
+			height: 280px
+		.left-img, .right-img
+			line-height: 280px	
+			font-size: 2rem
+	.more-button
+		img
+			margin-left: 0.3vmin
+			&:hover
+				margin-left: 0.5vmin
+	.recommand
+		margin-top: -417px
+		ul
+			flex-wrap: wrap
+		li
+			width: 48.21%
+			margin-bottom: 1.5rem
+			&:nth-child(2), &:nth-child(4)
+				margin-right: 0
+		.title
+			margin-bottom: 2rem
+	.recommand-content
+		background-color: $color-white
+	.contact
+		padding-bottom: 56px
+		.title
+			margin-bottom: 1rem
+		.container
+			padding-left: calc( 136px - 3rem)
+			padding-right: calc( 136px - 3rem)
+		p
+			font-size: 1rem
+	.input-group
+		.row
+			&:nth-child(5)
+				input[type="checkbox"]
+					width: 5%
+				p
+					width: 92%
+				align-items: flex-start
+				justify-content: flex-end
+		.mb-2
+			margin-bottom: 1rem
+		
+	.footer-block
+		padding: 2.5rem 0
+		ul
+			&:nth-child(1)
+				li
+					margin-right: 2.5rem
+		p
+			font-size: 1.25rem
+	.footer-nav
+		margin-bottom: 1.2rem		
+	.media
+		img
+			width: 1.2rem
+			height: 1.2rem
+	.info
+		img
+			width: 2rem
+			height: 2rem
+	.copyright
+		ul
+			&:nth-child(1)
+				li
+					&:nth-child(1)
+						display: none
+						
+@media screen and (max-width: 767px) 
+	h1
+		font-size: 2rem
+	h2
+		font-size: 1.5rem
+	h3
+		font-size: 1.25em
+	nav
+		position: relative
+		padding-top: 10px
+		padding-bottom: 10px
+		ul.d-flex.flex-align-center.fc-light
+			display: none
+		.d-flex.flex-content-between.flex-align-center
+			justify-content: center			
+		.container
+			position: relative
+	.logo
+		max-width: 3rem
+	.hamburger-icon
+		display: block
+		position: absolute
+		left: 1rem
+
+	.header-block
+		span
+			font-size: 1rem
+	.header
+		height: 394px
+	.container
+		max-width: calc( 73px*4 + 20px*3 + 12px*2 )
+	.points
+		li
+			width: 100%
+	.title
+		font-size: 1.2rem
+	.fz-3
+		font-size: 1.25rem
+	.classic
+		.col-8
+			display: none
+		.container
+			.classic-block-upper
+				background-image: url(../img-w3/product-1.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: cover
+				height: 134px
+			.classic-block-upper-icon
+				background-image: url(../img-w3/icon-diamond-white.svg)
+				height: 2rem
+				width: 2rem
+			.classic-block-middle-icon
+				background-image: url(../img-w3/icon-sun-white.svg)
+				height: 2rem
+				width: 2rem
+			.classic-block-bottom-icon
+				background-image: url(../img-w3/icon-thunder-white.svg)
+				height: 2rem
+				width: 2rem
+
+			.classic-block-middle
+				background-image: url(../img-w3/product-2.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: cover
+				height: 134px
+			.classic-block-bottom
+				background-image: url(../img-w3/product-3.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: cover
+				height: 134px
+		.col-4
+			width: 100%
+			justify-content: center
+			p
+				color: $color-white
+			img
+				display: none
+	.design-bottom
+		flex-wrap: wrap
+	.left-img
+		width: 100%
+		margin-right: 0
+		margin-bottom: 1.25rem
+	.right-img
+		width: 100%
+	section.design
+		padding-bottom: 189px
+		.design-bottom
+			height: auto
+	.recommand
+		margin-top: -189px
+		padding-top: 1.2rem
+		padding-bottom: 0.5rem
+		li
+			width: 100%
+			margin-right: 0
+			margin-bottom: 1rem
+	.contact
+		.container
+			max-width: calc( 375px + 1.2rem + 1.2rem )
+			padding-left: 1.2rem
+			padding-right: 1.2rem
+	.footer-nav
+		position: absolute
+		right: 0.75rem
+		ul
+			&:first-child
+				display: none
+		.mr-4
+			margin-right: 1.2rem
+	.footer-block
+		position: relative
+		padding: 1.2rem 0
+		p
+			font-size: 1rem
+		ul.info
+			img
+				width: 1.25rem
+				height: 1.25rem
+				margin-right: 5px
+				padding-right: 0
+	.copyright
+		position: relative
+		flex-wrap: wrap
+		font-size: 0.875rem
+		ul
+			width: 100%
+			&:first-child
+				margin-bottom: 0.5rem
+				li
+					&:first-child
+						display: inline-block
+						position: absolute
+						width: 46px
+						bottom: 0
+						right: 0
+						margin-right: 0
+			&:nth-child(2)
+				flex-wrap: wrap
+				li
+					width: 100%
+					&:first-child
+						margin-bottom: 0.5rem
+
+		

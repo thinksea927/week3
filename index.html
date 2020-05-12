@@ -6,29 +6,40 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/all.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,900&amp;display=swap"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <title>week3</title>
   </head>
   <body>
-    <nav class="d-flex flex-content-between flex-align-center">
-      <div class="logo"><a href="#"><img src="img-w3/logo.png" alt=""/></a></div>
-      <ul class="d-flex flex-align-center fc-light">
-        <li>系列鏡框</li>
-        <li>門市據點</li>
-        <li>部落格</li>
-        <li>常見問題</li>
+    <nav>
+      <div class="container">
+        <div class="d-flex flex-content-between flex-align-center">
+          <div class="logo"><a href="index.html"><img src="img-w3/logo.png" alt=""/></a></div>
+          <ul class="d-flex flex-align-center fc-light">
+            <li> <a href="#">系列鏡框</a></li>
+            <li> <a href="#">門市據點</a></li>
+            <li> <a href="#">部落格</a></li>
+            <li> <a href="faq.html">常見問題</a></li>
+          </ul>
+          <div class="hamburger-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+        </div>
+      </div>
+      <ul class="full-width-menu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="faq.html">常見問題</a></li>
       </ul>
     </nav>
     <header class="header">
       <div class="container d-flex flex-content-end flex-align-center h-100">
-        <div class="header-block fc-primary-dark">
-          <h2>Promise-Desert 2020 早春系列</h2>
+        <div class="header-block fc-primary-dark"><span>Promise-Desert 2020 早春系列</span>
           <h1>看得清，才能看得遠</h1>
         </div>
       </div>
     </header>
     <section class="points">
       <div class="container">
-        <div class="title fz-6 text-center fc-primary-dark bold">用專業的心，做專業的事</div>
+        <h2>用專業的心，做專業的事</h2>
         <ul class="d-flex flex-content-between">
           <li>
             <div class="icon"><img src="img-w3/icon-dollar.svg" alt=""/></div>
@@ -55,7 +66,7 @@
     </section>
     <section class="classic">
       <div class="container">
-        <div class="title fz-6 text-center fc-primary-dark bold">經典系列鏡框</div>
+        <h2>經典系列鏡框</h2>
         <div class="classic-block-upper row mb-4">
           <div class="col-8 mr-3"><img src="img-w3/product-1.png" alt=""/></div>
           <div class="col-4 d-flex flex-align-center">
@@ -80,7 +91,7 @@
       </div>
     </section>
     <section class="design">
-      <div class="title fz-6 text-center fc-light bold">聯名設計鏡框</div>
+      <h2 class="fc-light">聯名設計鏡框</h2>
       <div class="design-upper d-flex mb-60">
         <div class="imgLeftCol mr-1">
           <div class="img"><img src="img-w3/product-4.png" alt=""/></div>
@@ -106,7 +117,7 @@
       </div>
     </section>
     <section class="recommand">
-      <div class="title fz-6 text-center fc-light bold">顧客推薦</div>
+      <h2 class="fc-light">顧客推薦</h2>
       <div class="container">
         <ul class="d-flex flex-content-between">
           <li class="mr-3">
@@ -145,32 +156,35 @@
       </div>
     </section>
     <section class="contact">
-      <div class="title fz-6 text-center bold">聯絡我們</div>
+      <h2>聯絡我們</h2>
       <div class="container">
-        <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-        <div class="input-group">
-          <div class="row d-flex flex-wrap mb-2">
-            <label for="name">姓名</label>
-            <input id="name" type="text" placeholder="陳小明"/>
-          </div>
-          <div class="row d-flex flex-wrap mb-2">
-            <label for="phone">聯絡電話</label>
-            <input id="phone" type="text" placeholder="0912-345-678"/>
-          </div>
-          <div class="row d-flex flex-wrap mb-2">
-            <label for="email">電子郵件</label>
-            <input id="email" type="text" placeholder="example@email.com"/>
-          </div>
-          <div class="row d-flex flex-wrap mb-2">
-            <label for="feedback">意見反應</label>
-            <textarea id="feedback" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
-          </div>
-          <div class="row d-flex flex-wrap flex-align-center">
-            <input type="checkbox"/>
-            <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
-          </div>
-        </div>
-        <button type="submit" value="Submit">確認送出</button>
+        <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          <form>
+            <div class="input-group">
+              <div class="row d-flex flex-wrap mb-2">
+                <label for="name">姓名</label>
+                <input id="name" type="text" placeholder="陳小明"/>
+              </div>
+              <div class="row d-flex flex-wrap mb-2">
+                <label for="phone">聯絡電話</label>
+                <input id="phone" type="text" placeholder="0912-345-678"/>
+              </div>
+              <div class="row d-flex flex-wrap mb-2">
+                <label for="email">電子郵件</label>
+                <input id="email" type="text" placeholder="example@email.com"/>
+              </div>
+              <div class="row d-flex flex-wrap mb-2">
+                <label for="feedback">意見反應</label>
+                <textarea id="feedback" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
+              </div>
+              <div class="row d-flex flex-wrap flex-align-center">
+                <input type="checkbox"/>
+                <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+              </div>
+            </div>
+            <button type="submit" value="Submit">確認送出</button>
+          </form>
+        </p>
       </div>
     </section>
     <footer>
@@ -211,5 +225,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      $(function(){
+      	$('.hamburger-icon').click(function(){
+      		$('.full-width-menu').toggleClass('active');
+      	});
+      	$('.answer-icon').click(function(){
+      		$(this).toggleClass('answer-icon-show');
+      
+      		$(this).parents('li').next()
+      			.toggleClass('show');
+      	});
+      });	
+    </script>
   </body>
 </html>
